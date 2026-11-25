@@ -4,7 +4,7 @@ Windows 用的 PDF 閱讀和列印程式，介面是繁體中文。重點是把�
 
 ## 下載安裝
 
-到 [Releases](https://github.com/DDGaryC/pdf-reader-print/releases/latest) 下載 `PDF-Reader-Print-Setup-版本.exe`，執行後照畫面安裝。
+到 [Releases](https://github.com/DDGaryC/pdf-reader-print/releases/latest) 下載 `PDF-Reader-Print-Setup-版本.zip`，解壓縮後執行裡面的 exe，照畫面安裝。（同一頁的 `.exe` 和 `latest.yml` 是給程式的「檢查更新」用的。）
 
 安裝程式沒有購買數位簽章，所以下載和第一次執行時，瀏覽器和 Windows 會先擋一下。這是對所有沒簽章的新程式都會有的提醒，照下面按就可以：
 
