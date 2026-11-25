@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EA5546"/>
+      <stop offset="1" stop-color="#B9261C"/>
+    </linearGradient>
+  </defs>
+  <!-- A document with its corner folded over -->
+  <path d="M58 8h104l58 58v166a16 16 0 0 1-16 16H58a16 16 0 0 1-16-16V24A16 16 0 0 1 58 8z" fill="url(#page)"/>
+  <path d="M162 8l58 58h-42a16 16 0 0 1-16-16z" fill="#F8BDB4"/>
+  <text x="131" y="164" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="700" fill="#FFFFFF">PDF</text>
+  <rect x="70" y="186" width="122" height="11" rx="5.5" fill="#FFFFFF" fill-opacity=".85"/>
+  <rect x="70" y="208" width="84" height="11" rx="5.5" fill="#FFFFFF" fill-opacity=".85"/>
+</svg>

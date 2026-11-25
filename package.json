@@ -1,0 +1,86 @@
+{
+  "name": "pdf-reader-print",
+  "productName": "PDF閱讀列印",
+  "version": "1.4.0",
+  "description": "Windows PDF 閱讀與列印程式",
+  "author": "Gary",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "vendor": "node scripts/copy-pdfjs.js",
+    "fixtures": "node test/make-test-pdfs.js",
+    "test": "node --test test/*.test.js",
+    "test:e2e": "electron test/e2e/run.js",
+    "test:installer": "node test/check-installer.js",
+    "pack": "electron-builder --dir",
+    "icon": "electron scripts/make-icon.js",
+    "dist": "electron-builder --win nsis --publish never -c.directories.output=dist-installer"
+  },
+  "build": {
+    "appId": "com.gary.pdfreaderprint",
+    "productName": "PDF閱讀列印",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "lib/**",
+      "renderer/**"
+    ],
+    "extraResources": [
+      {
+        "from": "resources/SumatraPDF.exe",
+        "to": "SumatraPDF.exe"
+      },
+      {
+        "from": "resources/SumatraPDF-LICENSE.txt",
+        "to": "SumatraPDF-LICENSE.txt"
+      },
+      {
+        "from": "build/pdf.ico",
+        "to": "pdf.ico"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "DDGaryC",
+      "repo": "pdf-reader-print"
+    },
+    "electronLanguages": [
+      "zh-TW",
+      "en-US"
+    ],
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": false,
+      "packElevateHelper": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "PDF閱讀列印",
+      "language": "1028",
+      "installerLanguages": [
+        "zh_TW"
+      ],
+      "differentialPackage": false,
+      "include": "build/installer.nsh",
+      "artifactName": "PDF-Reader-Print-Setup-${version}.${ext}"
+    }
+  },
+  "devDependencies": {
+    "electron": "45.2.1",
+    "electron-builder": "26.18.0",
+    "pdfjs-dist": "4.10.38"
+  },
+  "dependencies": {
+    "@cantoo/pdf-lib": "2.11.1",
+    "electron-updater": "6.8.11"
+  }
+}

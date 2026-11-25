@@ -1,0 +1,8 @@
+# Installed packages and build output: all made again by npm
+node_modules/
+dist/
+dist-installer/
+
+# Left behind if a save is cut short
+*.tmp
+*.old

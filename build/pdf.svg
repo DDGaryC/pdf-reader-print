@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <path d="M48 12h116l44 44v188H48z" fill="#FFFFFF" stroke="#A9A3A3" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M164 12v44h44z" fill="#F8D5CF" stroke="#A9A3A3" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="76" y="76" width="64" height="10" rx="5" fill="#F0A399"/>
+  <rect x="76" y="100" width="104" height="10" rx="5" fill="#F0A399"/>
+  <rect x="76" y="124" width="104" height="10" rx="5" fill="#F0A399"/>
+  <rect x="24" y="156" width="208" height="76" rx="14" fill="#D2382B"/>
+  <text x="128" y="214" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="62" font-weight="700" fill="#FFFFFF">PDF</text>
+</svg>
